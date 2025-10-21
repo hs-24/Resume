@@ -9,12 +9,13 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #e6f0fa, #f9f9f9); /* subtle gradient */
+      background: linear-gradient(to right, #e6f0fa, #f9f9f9);
       color: #333;
     }
+
     .container {
       max-width: 650px;
-      margin: 50px auto;
+      margin: 40px auto;
       background-color: #fff;
       padding: 40px 30px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
@@ -22,25 +23,12 @@
       text-align: center;
       transition: transform 0.3s;
     }
-    .container:hover {
-      transform: translateY(-5px);
-    }
-    h1 {
-      margin-bottom: 5px;
-      font-size: 2.2em;
-      color: #0366d6;
-    }
-    h2 {
-      margin-top: 0;
-      font-weight: normal;
-      color: #555;
-      font-size: 1.2em;
-    }
-    p {
-      margin: 20px 0;
-      font-size: 1em;
-      line-height: 1.6;
-    }
+    .container:hover { transform: translateY(-5px); }
+
+    h1 { margin-bottom: 5px; font-size: 2.2em; color: #0366d6; }
+    h2 { margin-top: 0; font-weight: normal; color: #555; font-size: 1.2em; }
+    p { margin: 20px 0; font-size: 1em; line-height: 1.6; }
+    
     a.button {
       display: inline-block;
       margin: 15px 0;
@@ -57,58 +45,90 @@
       background-color: #024b9b;
       transform: scale(1.05);
     }
-    h3 {
-      margin-top: 30px;
-      font-size: 1.1em;
-      color: #0366d6;
+
+    h3 { margin-top: 30px; font-size: 1.3em; color: #0366d6; }
+
+    /* Work Experience Grid */
+    .work-experience {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px;
     }
-    ul {
-      text-align: left;
-      display: inline-block;
-      padding-left: 20px;
-      margin-top: 10px;
+
+    .company {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px;
+      width: 120px;
+      text-align: center;
     }
-    ul li {
-      margin-bottom: 8px;
+
+    .company img {
+      height: 50px;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .company img:hover {
+      transform: scale(1.1);
+    }
+
+    .company-name {
+      font-weight: bold;
       font-size: 0.95em;
-    }
-    footer {
-      margin-top: 30px;
-      font-size: 0.9em;
       color: #555;
     }
-    footer a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    /* Responsive adjustments */
+
+    ul { text-align: left; display: inline-block; padding-left: 20px; margin-top: 10px; }
+    ul li { margin-bottom: 8px; font-size: 0.95em; }
+
+    footer { margin-top: 30px; font-size: 0.9em; color: #555; }
+    footer a { color: #0366d6; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
     @media (max-width: 700px) {
-      .container {
-        margin: 30px 15px;
-        padding: 30px 20px;
-      }
+      .container { margin: 30px 15px; padding: 30px 20px; }
+      .company img { height: 40px; margin-bottom: 8px; }
+      .company { width: 100px; margin: 10px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Himanshu Sharma</h1>
-    <h2>First-Year Digital Supply Chain Undergraduate | Logistics & Operations</h2>
+    <h2>First-Year Digital Supply Chain Undergraduate</h2>
 
-    <p>Welcome! You can view or download my professional résumé, which highlights my experience in logistics, operations, and interest in digital supply chain technologies.</p>
+    <p>Welcome! You can view or download my professional resume, which highlights my experience in logistics, operations, and interest in digital supply chain technologies.</p>
 
     <a class="button" href="HimanshuSharma_Resume.pdf" target="_blank">View / Download Resume</a>
 
+    <!-- Work Experience Section -->
+    <h3>Work Experience</h3>
+    <div class="work-experience">
+      <div class="company">
+        <img src="uniqlo.png" alt="Company 1">
+        <div class="Uniqlo(Singapore) Pte Ltd">Company 1</div>
+      </div>
+      <div class="company">
+        <img src="DB_schenker.png" alt="Company 2">
+        <div class="DB Schenker(Singapore) Pte Ltd">Company 2</div>
+      </div>
+      <div class="company">
+        <img src="DNDTS.png" alt="Company 3">
+        <div class="DNDTS Pte Ltd">Company 3</div>
+      </div>
+    </div>
+
     <h3>Key Skills</h3>
     <ul>
+      <li><strong>Microsoft Office Proficiency</li>
+      <li><strong>Data Analysis & Reporting</li>
+      <li>Communication & Teamwork</li>
       <li>Freight & Logistics Coordination</li>
-      <li>Inventory & Warehouse Management</li>
-      <li>Data Analysis & Reporting</li>
       <li>Process Optimization</li>
-      <li>Customer Operations</li>
+      <li>Adaptability</li>
     </ul>
 
     <footer>
