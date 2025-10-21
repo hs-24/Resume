@@ -9,21 +9,25 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #e6f0fa; /* Soft, professional light blue */
+      background: linear-gradient(to right, #e6f0fa, #f9f9f9); /* subtle gradient */
       color: #333;
     }
     .container {
-      max-width: 600px;
-      margin: 60px auto;
+      max-width: 650px;
+      margin: 50px auto;
       background-color: #fff;
-      padding: 40px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      border-radius: 10px;
+      padding: 40px 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      border-radius: 12px;
       text-align: center;
+      transition: transform 0.3s;
+    }
+    .container:hover {
+      transform: translateY(-5px);
     }
     h1 {
       margin-bottom: 5px;
-      font-size: 2em;
+      font-size: 2.2em;
       color: #0366d6;
     }
     h2 {
@@ -35,30 +39,57 @@
     p {
       margin: 20px 0;
       font-size: 1em;
-      line-height: 1.5;
+      line-height: 1.6;
     }
     a.button {
       display: inline-block;
-      padding: 12px 25px;
+      margin: 15px 0;
+      padding: 14px 30px;
       background-color: #0366d6;
       color: #fff;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.3s ease;
+      font-size: 1em;
+      transition: background-color 0.3s, transform 0.2s;
     }
     a.button:hover {
       background-color: #024b9b;
+      transform: scale(1.05);
+    }
+    h3 {
+      margin-top: 30px;
+      font-size: 1.1em;
+      color: #0366d6;
+    }
+    ul {
+      text-align: left;
+      display: inline-block;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      font-size: 0.95em;
     }
     footer {
       margin-top: 30px;
       font-size: 0.9em;
       color: #555;
     }
-    ul {
-      text-align: left;
-      display: inline-block;
-      margin-top: 10px;
+    footer a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 700px) {
+      .container {
+        margin: 30px 15px;
+        padding: 30px 20px;
+      }
     }
   </style>
 </head>
@@ -66,10 +97,11 @@
   <div class="container">
     <h1>Himanshu Sharma</h1>
     <h2>First-Year Digital Supply Chain Undergraduate | Logistics & Operations</h2>
+
     <p>Welcome! You can view or download my professional résumé, which highlights my experience in logistics, operations, and interest in digital supply chain technologies.</p>
-    
+
     <a class="button" href="HimanshuSharma_Resume.pdf" target="_blank">View / Download Resume</a>
-    
+
     <h3>Key Skills</h3>
     <ul>
       <li>Freight & Logistics Coordination</li>
@@ -78,7 +110,7 @@
       <li>Process Optimization</li>
       <li>Customer Operations</li>
     </ul>
-    
+
     <footer>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/himanshu-sharma-7b7766195/" target="_blank">linkedin.com/in/HimanshuSharma</a></p>
     </footer>
